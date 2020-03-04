@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+        <script src="script/build/pdf.js"></script>
+        <script src="script/menu.js"></script>
+        <title>Osorio World's kitchen</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2 header">
+                    <img class="header-logo" src="img/logo.png" alt="Osorio">
+                </div>
+                <div class="col-lg-10 header">
+                    <ul class="nav">
+                      <li class="nav-item menu-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                      </li>
+                      <li class="nav-item dropdown menu-item">
+                        <a class="nav-link active pointer dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          MENU
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item menu_item" href="menu.html?menu=lunch">Lunch</a>
+                          <a class="dropdown-item menu_item" href="menu.html?menu=diner">Diner</a>
+                          <a class="dropdown-item menu_item" href="menu.html?menu=kids">Kids</a>
+                          <a class="dropdown-item menu_item" href="menu.html?menu=drinks">Drinks</a>
+                        </div>
+                      </li>
+                      <li class="nav-item menu-item">
+                        <a class="nav-link" href="booking.html">BOOKING</a>
+                      </li>
+                      <li class="nav-item menu-item">
+                        <a class="nav-link" href="giftvoucher.html">GIFTVOUCHER</a>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container menu-container">
+            <div class="row">
+                <div class="offset-3 col-3">
+                    <img class="flag" id="ned" src="img/ned_vlag.jpg" alt="ned_vlag">
+                </div>
+                <div class="col-3">
+                    <img class="flag" id="du" src="img/du_vlag.png" alt="du_vlag">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1 page-select unselectable" id="pageDown" onclick="pageDown()">
+                    <p><</p>
+                </div>
+                <div class="col-10">
+                    <canvas id="menu"></canvas>
+                </div>
+                <div class="col-1 page-select unselectable" id="pageUp" onclick="pageUp()">
+                    <p>></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
