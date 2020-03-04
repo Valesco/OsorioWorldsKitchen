@@ -127,6 +127,11 @@ p {
     color: #e22326;
 }
 
+@media only screen and (max-width: 364px) {
+    .menu-item a {
+    font-size: 12px;
+}
+
 @media only screen and (max-width: 991px) {
     .flag {
         width: 80px;
