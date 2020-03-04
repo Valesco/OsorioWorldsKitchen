@@ -198,7 +198,7 @@ p {
 
 .main-button:hover {
     background-color:#e43e3b !important;
-}
+} 
 
 .dropdown-toggle::after {
     display:none;
