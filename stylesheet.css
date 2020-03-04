@@ -129,7 +129,8 @@ p {
 
 @media only screen and (max-width: 364px) {
     .menu-item a {
-    font-size: 12px;
+        font-size: 12px;
+    }
 }
 
 @media only screen and (max-width: 991px) {
@@ -198,7 +199,7 @@ p {
 
 .main-button:hover {
     background-color:#e43e3b !important;
-} 
+}
 
 .dropdown-toggle::after {
     display:none;
