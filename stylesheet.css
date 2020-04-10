@@ -17,6 +17,12 @@ body {
     -moz-box-shadow: 10px 10px 48px -6px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 48px -6px rgba(0,0,0,0.75);
     display:block;
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 .footer-fade {
@@ -202,6 +208,12 @@ p {
 }
 
 @media only screen and (max-width: 991px) {
+    .impression {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+
     .footer-content {
         margin-top:-230px !important;
     }
