@@ -10,7 +10,8 @@
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
         <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-        <title>Osorio World's kitchen</title>
+        <script src="script/image_interval.js"></script>
+        <title>Osorio World's Kitchen - Delicious tastes from around the world on Ameland</title>
     </head>
     <body>
         <div class="container-fluid">
@@ -28,17 +29,16 @@
                           MENU
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="menu.html?menu=lunch">Lunch</a>
-                            <a class="dropdown-item" href="menu.html?menu=diner">Diner</a>
-                            <a class="dropdown-item" href="menu.html?menu=kids">Kids</a>
-                            <a class="dropdown-item" href="menu.html?menu=drinks">Drinks</a>
+                            <a class="dropdown-item" href="menu?menu=lunch">Lunch</a>
+                            <a class="dropdown-item" href="menu?menu=diner">Diner & Kids</a>
+                            <a class="dropdown-item" href="menu?menu=drinks">Drinks</a>
                         </div>
                       </li>
                       <li class="nav-item menu-item">
-                        <a class="nav-link" href="booking.html">BOOKING</a>
+                        <a class="nav-link" href="booking">BOOKING</a>
                       </li>
                       <li class="nav-item menu-item">
-                        <a class="nav-link" href="giftvoucher.html">VOUCHERS</a>
+                        <a class="nav-link" href="giftcards">GIFTCARDS</a>
                       </li>
                     </ul>
                 </div>
@@ -47,16 +47,70 @@
         <div class="container-fluid main-content">
             <div class="row">
                 <div class="col-md-6 order-md-2 main-figure align-self-center">
-                    <img class="soup" src="img/soep.png" alt="Soep">
+                    <img class="soup" id="image" src="img/borrelplank.png" alt="Soep">
                 </div>
                 <div class="col-md-5 order-md-1 offset-md-1 logo align-self-center">
                     <h1 class="marker">Join us in a culinary journey around the world!</h1>
-                    <p class="text">De exotische geuren van heerlijke kruiden doen je mond wateren. Al onze gerechten zijn gebaseerd op oude familierecepten en onze ervaring, opgedaan door onze reizen en werken in andere culturen.
-                        Vol trots willen wij u deze smaken laten ontdekken en met u delen.<br><br> Immers, waarom bekende dingen eten, als er een andere wereld van verfijnde smaken op je wacht.
-                        Samen eten, samen delen van onze gerechten op "appetizer-plate" formaat, iets lekkers drinken en een goed gesprek wordt bij ons een feest. Niets verbindt zo als eten.
-                        <br><br>Kom bij ons voor een fijne en feestelijke maaltijd.
+                    <p class="text">
+                        De exotische geuren van heerlijke kruiden doen je mond wateren. Al onze gerechten zijn gebaseerd op oude familierecepten en onze ervaring, opgedaan door onze reizen en werken in andere culturen. Vol trots willen wij u deze smaken laten ontdekken en met u delen.
+                        <br><br>
+                        Samen eten, samen delen van onze gerechten op "appetizer plate" formaat, exotische cocktails drinken en een goed gesprek hebben wordt bij ons een feest. Niets verbindt zo als eten.
+                        <br><br>
+                        Kom bij ons voor een fijne en feestelijke ervaring.
                     </p>
-                    <button class="main-button" onclick="window.location.href='booking.html';">BOOKING</button>
+                    <button class="main-button" onclick="window.location.href='booking';">BOOKING</button>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid main-content slider">
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <div class="row">
+                        <div class="col-md-4 align-self-center">
+                            <img class="impression" src="img/outside2.jpg" alt="impression">
+                        </div>
+                        <div class="col-md-4 align-self-center">
+                            <img class="impression" src="img/outside.jpg" alt="impression">
+                        </div>
+                        <div class="col-md-4 align-self-center">
+                            <img class="impression" src="img/terras.jpg" alt="impression">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid footer">
+            <div class="row">
+                <div class="footer-fade"></div>
+                <div class="col-md-12 footer-content">
+                    <div class="row">
+                        <div class="col-4">
+                            <p class="mini-marker">Adres</p>
+                            <p>Strandweg 50</p>
+                            <p>9163 GN Nes</p>
+                            <p>Ameland</p>
+                        </div>
+                        <div class="col-4">
+                            <p class="mini-marker">CONTACT</p>
+                            <p>0519-769007</p>
+                            <p>WhatsApp: 0685570322</p>
+                            <p>info@osorio.nl</p>
+                            <a class="footer-link" href="https://www.facebook.com/osorioworldskitchen/">Facebook</a>
+                            <a class="footer-link" href="https://www.instagram.com/osoriowk/">Instagram</a>
+                        </div>
+                        <div class="col-4">
+                            <p class="mini-marker">Openingstijden</p>
+                            <p>Dinsdag gesloten</p>
+                            <p>12:00 - 21:00</p>
+                            <br>
+                            <a class="footer-link" href="disclaimer.html">Privacy</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="credits">Designed by Neanke & Developed by Valesco <br>2020</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -12,7 +12,7 @@ pdfjsLib.GlobalWorkerOptions.workerSrc = 'script/build/pdf.worker.js';
 
 window.addEventListener('load', function () {
     genPage();
-
+    /*
     var ned_flag = document.getElementById("ned");
     var du_flag = document.getElementById("du");
     var items = document.getElementsByClassName("menu_item");
@@ -35,6 +35,7 @@ window.addEventListener('load', function () {
     du_flag.onclick = function() {
         window.location.href = "menu.html?menu=lunch&lang=du";
     };
+    */
 });
 
 function genPage() {

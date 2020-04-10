@@ -12,47 +12,58 @@
         <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
         <script src="script/build/pdf.js"></script>
         <script src="script/menu.js"></script>
-        <title>Osorio World's kitchen</title>
+        <title>Osorio World's Kitchen - Menu</title>
     </head>
     <body>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-2 header">
-                    <img class="header-logo" src="img/logo.png" alt="Osorio">
+                    <img class="header-logo" src="img/logo.png" alt="Osorio" onclick="window.location.href='/'">
                 </div>
                 <div class="col-lg-10 header">
                     <ul class="nav">
                       <li class="nav-item menu-item">
-                        <a class="nav-link" href="index.html">HOME</a>
+                        <a class="nav-link" href="/">HOME</a>
                       </li>
                       <li class="nav-item dropdown menu-item">
                         <a class="nav-link active pointer dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           MENU
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <a class="dropdown-item menu_item" href="menu.html?menu=lunch">Lunch</a>
-                          <a class="dropdown-item menu_item" href="menu.html?menu=diner">Diner</a>
-                          <a class="dropdown-item menu_item" href="menu.html?menu=kids">Kids</a>
-                          <a class="dropdown-item menu_item" href="menu.html?menu=drinks">Drinks</a>
+                          <a class="dropdown-item menu_item" href="menu?menu=lunch">Lunch</a>
+                          <a class="dropdown-item menu_item" href="menu?menu=diner">Diner & Kids</a>
+                          <a class="dropdown-item menu_item" href="menu?menu=drinks">Drinks</a>
                         </div>
                       </li>
                       <li class="nav-item menu-item">
-                        <a class="nav-link" href="booking.html">BOOKING</a>
+                        <a class="nav-link" href="booking">BOOKING</a>
                       </li>
                       <li class="nav-item menu-item">
-                        <a class="nav-link" href="giftvoucher.html">VOUCHERS</a>
+                        <a class="nav-link" href="giftcards">GIFTCARDS</a>
                       </li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="container menu-container">
+            <!--
             <div class="row">
                 <div class="offset-3 col-3">
                     <img class="flag" id="ned" src="img/ned_vlag.jpg" alt="ned_vlag">
                 </div>
                 <div class="col-3">
                     <img class="flag" id="du" src="img/du_vlag.png" alt="du_vlag">
+                </div>
+            </div>
+            -->
+            <div class="row">
+                <div class="col-md-12 logo align-self-center">
+                    <h1 class="marker">Explore the culinary journey!</h1>
+                </div>
+                <div class="col-md-12 logo align-self-center">
+                    <p class="text">
+                        Met Osorio World's Kitchen willen we laten zien waarom familiegerechten overgedragen worden. Maak kennis met smaken van over de wereld, geïnspireerd op familiegerechten!
+                    </p>
                 </div>
             </div>
             <div class="row">
@@ -64,6 +75,41 @@
                 </div>
                 <div class="col-1 page-select unselectable" id="pageUp" onclick="pageUp()">
                     <p>></p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid footer">
+            <div class="row">
+                <div class="footer-fade"></div>
+                <div class="col-md-12 footer-content">
+                    <div class="row">
+                        <div class="col-4">
+                            <p class="mini-marker">Adres</p>
+                            <p>Strandweg 50</p>
+                            <p>9163 GN Nes</p>
+                            <p>Ameland</p>
+                        </div>
+                        <div class="col-4">
+                            <p class="mini-marker">CONTACT</p>
+                            <p>0519-769007</p>
+                            <p>WhatsApp: 0685570322</p>
+                            <p>info@osorio.nl</p>
+                            <a class="footer-link" href="https://www.facebook.com/osorioworldskitchen/">Facebook</a>
+                            <a class="footer-link" href="https://www.instagram.com/osoriowk/">Instagram</a>
+                        </div>
+                        <div class="col-4">
+                            <p class="mini-marker">Openingstijden</p>
+                            <p>Dinsdag gesloten</p>
+                            <p>12:00 - 21:00</p>
+                            <br>
+                            <a class="footer-link" href="disclaimer.html">Privacy</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="credits">Designed by Neanke & Developed by Valesco <br>2020</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
